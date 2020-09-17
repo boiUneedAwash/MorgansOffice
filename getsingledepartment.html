@@ -17,11 +17,11 @@
                 success: function (data) {
                     console.log(data);
                     i = 0;
-                    while (i < data.length){
+                    while (i < data.length) {
                         department = data[i];
-                        $("#department_selection").append("<option value='"+department.department_id+"'>" +
-                        department.name +
-                        "</option>");
+                        $("#department_selection").append("<option value='" + department.department_id + "'>" +
+                            department.name +
+                            "</option>");
                         i++;
                     }
 
@@ -35,11 +35,11 @@
                 }
             });
 
-            function getSingleDepartment(department_id){
+            function getSingleDepartment(department_id) {
                 $.ajax({
                     type: 'GET',
                     dataType: 'JSON',
-                    url: 'https://morganoffice.herokuapp.com/api/departments/'+department_id+'/',
+                    url: 'https://morganoffice.herokuapp.com/api/departments/' + department_id + '/',
                     success: function (data) {
                         console.log(data);
 

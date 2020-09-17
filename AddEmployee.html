@@ -24,9 +24,9 @@
                     // location.reload();
 
                     i = 0;
-                    while (i < data.length){
+                    while (i < data.length) {
                         department = data[i];
-                        $("#department_id_input").append("<option value='"+department.department_id+"'>"+department.name+"</option>");
+                        $("#department_id_input").append("<option value='" + department.department_id + "'>" + department.name + "</option>");
                         i = i + 1;
                     }
                 },
@@ -81,23 +81,23 @@
 <body>
 <form onsubmit="return false">
     <p><label> Last Name: </label><input id="last_name_input" type="text" maxlength="25" size="25"></p>
-    <p id = "last_name_input_err"></p>
+    <p id="last_name_input_err"></p>
     <p><label> First Name: </label><input id="first_name_input" type="text" maxlength="25" size="25"></p>
-    <p id = "first_name_input_err"></p>
+    <p id="first_name_input_err"></p>
     <p><label> Street Address: </label><input id="street_address_input" type="text" maxlength="50" size="50"></p>
-    <p id = "street_address_input_err"></p>
+    <p id="street_address_input_err"></p>
     <p><label> Suburb: </label><input id="suburb_input" type="text" maxlength="15" size="15"></p>
-    <p id = "suburb_input_err"></p>
+    <p id="suburb_input_err"></p>
     <p><label> Phone Number: </label><input id="phone_number_input" type="text" maxlength="15" size="15"></p>
-    <p id = "phone_number_input_err"></p>
+    <p id="phone_number_input_err"></p>
     <p><label> Hourly Rate: </label><input id="hourly_rate_input" type="number" maxlength="5" size="5"></p>
-    <p id = "hourly_rate_input_err"></p>
+    <p id="hourly_rate_input_err"></p>
     <p><label> Department: </label>
         <select id="department_id_input">
-            <option value = "">Select one</option>
+            <option value="">Select one</option>
         </select>
     </p>
-    <p id = "department_id_input_err"></p>
+    <p id="department_id_input_err"></p>
     <button type="button" id="add_employee_but">Add Employee</button>
     <p></p>
     <a href="MainMenu.html">Main Menu</a>

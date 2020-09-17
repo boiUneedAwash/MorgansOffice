@@ -17,12 +17,12 @@
                 success: function (data) {
                     console.log(data);
                     i = 0;
-                    while (i < data.length){
+                    while (i < data.length) {
                         department = data[i];
                         $("#department_table").append("<tr>" +
-                            "<td>"+department.department_id+"</td>" +
-                            "<td>"+department.name+"</td>" +
-                            "<td>"+department.location+"</td>" +
+                            "<td>" + department.department_id + "</td>" +
+                            "<td>" + department.name + "</td>" +
+                            "<td>" + department.location + "</td>" +
                             "</tr>");
                         i++;
                     }
@@ -37,7 +37,9 @@
 <body>
 <table id="department_table">
     <tr>
-        <td>ID</td><td>Name</td><td>Location</td>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Location</td>
     </tr>
 </table>
 </body>
